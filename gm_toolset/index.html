@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="./renderer.js"></script>
+    <title>prototype toolset</title>
+  </head>
+  <body>
+
+    <div class="content">
+      <div class="contenttitle_box">
+        <h1 class="content_title">prototype toolset</h1>
+        <p class="content_description">This little program is an automatic dice tower</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content_box">
+        <h2 class="content_title">skill check</h2>
+        <button class="d100" value=1 onclick="skillCheck(this)">1</button>
+        <button class="d100" value=2 onclick="skillCheck(this)">2</button>
+        <button class="d100" value=3 onclick="skillCheck(this)">3</button>
+        <button class="d100" value=4 onclick="skillCheck(this)">4</button>
+        <button class="d100" value=5 onclick="skillCheck(this)">5</button>
+        <button class="d100" value=6 onclick="skillCheck(this)">6</button>
+        <div class="result">
+          <h3 id="skillCheck_result">?</h3>
+        </div>
+      </div>
+
+      <div class="content_box">
+        <h2 class="content_title">damage roll</h2>
+        <button class="d10" value=1 onclick="damageRoll(this)">1</button>
+        <button class="d10" value=2 onclick="damageRoll(this)">2</button>
+        <button class="d10" value=3 onclick="damageRoll(this)">3</button>
+        <button class="d10" value=4 onclick="damageRoll(this)">4</button>
+        <button class="d10" value=5 onclick="damageRoll(this)">5</button>
+        <button class="d10" value=6 onclick="damageRoll(this)">6</button>
+        <div class="result">
+          <h3 id="damageRoll_result">?</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
