@@ -22,6 +22,10 @@ monster health = 50 + Xd10 (X is the level of a monster) + Y (Y is the class of 
 
 The number of actions per turn for a monster is detriment by the level of it. A level 5 monster has 5 actions per turn.
 
+## movement
+
+Every monster a additonal movement action. However, they are also allowed to use their normal actions as movement actions.
+
 ## attack and defence
 
 A monster's attack and defence is the same level as the level of the monster. With every attack the attack level decreases by one per turn, this resets in the next turn of the monster.

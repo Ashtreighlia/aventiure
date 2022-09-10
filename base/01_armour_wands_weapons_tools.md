@@ -2,13 +2,16 @@
 
 # the armour, wands, weapons and tools of prototype
 
+Armour, wands, weapons and tools can be used by player to give them a advantage on skill checks and in combat.
+Every item has has one or multiple modifiers, called bonuses. These are rolled by the GM with a 1d100 and apply to the found item.
+
 ## armour
 
 | armour     | movement | defense | stealth | bonus slots |
 | ---------- |:--------:|:-------:|:-------:|:-----------:|
-| cloth      | +1 block | -10     | +10     | 2           |
-| leather    | +1 block | -5      | +5      | 1           |
-| chain mail | 0        | 0       | 0       | 1           |
+| cloth      | +1 block | -5      | +10     | 2           |
+| leather    | +1 block | 0       | +5      | 1           |
+| chain mail | 0        | +5      | 0       | 1           |
 | scale      | -1 block | +5      | -5      | 2           |
 | plate      | -1 block | +10     | -10     | 3           |
 
