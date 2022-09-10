@@ -25,3 +25,7 @@ The number of actions per turn for a monster is detriment by the level of it. A 
 ## attack and defence
 
 A monster's attack and defence is the same level as the level of the monster. With every attack the attack level decreases by one per turn, this resets in the next turn of the monster.
+
+## damage
+
+The damage a monster can deal is the sum of rolled Xd10, where the X stands for the level of the monster.
