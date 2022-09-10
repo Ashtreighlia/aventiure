@@ -115,7 +115,7 @@ For more information look up [rituals and spells of prototype](02_rituals_spells
 
 ## characters
 
-Like any other TTRPG, prototype also relies heavily on its characters. To simplify the creation of a [character sheet](05_character sheet.md) for the players, one is already enclosed, what a service!
+Like any other TTRPG, prototype also relies heavily on its characters. To simplify the creation of a [character sheet](../extensions/assets/character_sheet/character_sheet.txt) for the players, one is already enclosed, what a service!
 
 ### health
 
