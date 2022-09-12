@@ -1,2 +1,0 @@
-# GM toolset
-The GM Toolset is an electron-based small tool for the GM of a prototype session. The easiest way to take a look inside is via **electron fiddle**, a simple and easy to use editor and compiler for small electron applications.
