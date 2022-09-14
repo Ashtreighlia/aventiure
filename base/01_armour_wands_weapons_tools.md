@@ -83,7 +83,7 @@ Every item has has one or multiple modifiers, called bonuses. These are rolled b
 | probability | effect    | damage/magic damage | range | self-damage | action use | life steal (on success) |
 |:-----------:|:---------:|:-------------------:|:-----:|:-----------:|:----------:|:-----------------------:|
 | 1-4         | broken    | -10                 | -1    | -           | -          | -                       |
-| 5-9         | damaged   | -5                  | -     | -           | -          | -                       |
+| 5-9         | damaged   | -5                  | -     | 5           | -          | -                       |
 | 10-14       | dull      | -5                  | -     | -           | -          | -                       |
 | 15-19       | unlucky   | -                   | -     | 5           | -          | +5                      |
 | 20-24       | bulky     | -                   | +1    | -           | +1         | -                       |

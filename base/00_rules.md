@@ -82,7 +82,7 @@ For more information look up [armour, wands, weapons and tools of prototype](01_
 
 ## spells and rituals
 
-As in the previous chapters, spells also have skill levels. Each player knows a number of spells based on their class and race. They can cast all of these as level 1 spells. Every player has a certain amount of spell slots according to their picked class and race. Casting a spell uses up one spell slot, if you are out of spell slots you cannot cast any more spells. Spell slots can be refreshed by taking a rest.
+As in the previous chapters, spells also have skill levels. Each player knows a number of spells based on their class and race. They can cast all of these as level 1 spells. Every player has a certain amount of mana points according to their picked class and race. Casting a spell uses up one mana point, if you are out of mana points you cannot cast any more spells. Mana points can be refreshed by taking a rest or a mana potion.
 
 There are three different types of spells - attack, support and utility. Utility and support spells are cast against the worst d10 and d10.0 (for 1-100) roll of the GM with the same amount of dice as the player has skill levels. Attack spells, on the other hand, are always rolled against the defence level of the attacked, the highest single roll counts. In the event of a tie, the attacked wins. The damage is determined by the wand used and the properties of the spell.
 
@@ -135,13 +135,13 @@ Healing can be achieved in three ways. Either by casting a heal spell, using a p
 
 ### level up
 
-Levelling is mostly determined by the GM. As a rule of thumb you level up every 6 skills you learned as a character. A level up grants you full health and spell slots and can be regarded as a rest with consumed ration. Additionally you gain 1d10 HP on your maximum health, one more spell slot.
+Levelling is mostly determined by the GM. As a rule of thumb you level up every 6 skills you learned as a character. A level up grants you full health and mana points and can be regarded as a rest with consumed ration. Additionally you gain 1d10 HP on your maximum health, one more spell slot.
 
 Every 2 character level ups you learn one new spell.
 
 ### rest
 
-You can take a rest at any time, but you should seek a safe place first to set up camp. A rest takes around 4 hours and resets all your spell slots. If you have consumed a ration your health will be completely restored, this is optional, but highly recommended.
+You can take a rest at any time, but you should seek a safe place first to set up camp. A rest takes around 4 hours and refills all your mana points. If you have consumed a ration your health will be completely restored, this is optional, but highly recommended.
 
 ### death
 
