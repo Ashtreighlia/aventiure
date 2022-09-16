@@ -32,7 +32,7 @@
 | spell          | use                                    | on success                             | on fail                                  | aoe                    |
 |:--------------:|:-------------------------------------- |:-------------------------------------- |:---------------------------------------- |:----------------------:|
 | fire blade     | a blade strikes an enemy               | strikes the target                     | strikes yourself                         |                        |
-| light beam     | a beam of light blinds your enemies    | -1d10 on attack rolls for party in aoe | -1d10 on defend rolls for enemies in aoe | 4 blocks (from impact) |
+| light beam     | a beam of light blinds your enemies    | -1d10 on on defend rolls for enemies in aoe | -1d10 on attack rolls for party in aoe | 4 blocks (from impact) |
 | blizzard       | a blast of cold overwhelms all enemies | -1 action for party in aoe             | -1 action for enemies in aoe             | 6 blocks (form caster) |
 | lightning bolt | a lightning bolt hits an enemy         | hits target for +1d10 dmg              | hits a random team member                |                        |
 | fire ball      | a big fire ball hits all enemies       | all enemies  in aoe take shared damage | party in aoe takes shared damage         | 3 blocks (from impact) |
