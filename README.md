@@ -21,7 +21,5 @@ To roughly determine the balance of rules and stats, some Jupyter notebooks were
 
 For more information visit the [testing grounds](./testing_grounds).
 
-## game master toolset
-To give the game master a little help with all the dice madness, there is the GM toolset. This currently only contains an automated skill and damage roll, but will be expanded in the future to include an automated dice roll for enemies, equipment and more.
-
-For more information visit the [game master toolset](https://github.com/Daginberth/game-master-toolset).
+## prototype toolset
+For more information visit the [prototype toolset](./prototype_toolset/index.html).
