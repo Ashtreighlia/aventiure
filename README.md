@@ -22,4 +22,4 @@ To roughly determine the balance of rules and stats, some Jupyter notebooks were
 For more information visit the [testing grounds](./testing_grounds).
 
 ## prototype toolset
-For more information visit the [prototype toolset](./prototype_toolset/index.html).
+For more information visit the [prototype toolset](./prototype_toolset/index.md).
