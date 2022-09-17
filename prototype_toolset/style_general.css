@@ -1,0 +1,36 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+	background-color: #111;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 50px;
+	color: #ffffff;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+button {
+	border: none;
+	color: white;
+	outline: none;
+}
+
+.title {
+    width: 100%;
+}
