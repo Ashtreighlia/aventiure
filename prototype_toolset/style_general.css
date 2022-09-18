@@ -29,6 +29,21 @@ button {
 	outline: none;
 }
 
-.title {
+a{
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.title{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.banner {
     width: 100%;
 }

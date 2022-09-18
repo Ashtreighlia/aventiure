@@ -1,0 +1,86 @@
+[
+    {
+        "used skills": [
+            {"skill": "do a thing: 1"},
+            {"skill": "do a thing: 1"},
+            {"skill": "do a thing: 1"},
+            {"skill": "do a thing: 1"},
+            {"skill": "do a thing: 1"},
+            {"skill": "do a thing: 1"},
+            {"skill": "lock picking: 2"},
+            {"skill": "lock picking: 2"}
+        ]
+    },
+    {
+        "used actions": [
+            {"action": "open a lock"},
+            {"action": "open a lock"},
+            {"action": "open a lock"},
+            {"action": "open a lock"},
+            {"action": "open a lock"},
+            {"action": "open a lock"},
+            {"action": "open a lock"},
+            {"action": "open a lock"}
+        ]
+    },
+    {
+        "player rolls":[
+            {"roll": "34"},
+            {"roll": "67"},
+            {"roll": "48"},
+            {"roll": "50"},
+            {"roll": "100"},
+            {"roll": "50"},
+            {"roll": "44, 70"},
+            {"roll": "22, 66"}
+        ]
+    },
+    {
+        "tool bonus":[
+            {"tool": "-"},
+            {"tool": "-"},
+            {"tool": "normal lock pick: +5 -> 53"},
+            {"tool": "-"},
+            {"tool": "-"},
+            {"tool": "-"},
+            {"tool": "-"},
+            {"tool": "-"}
+        ]
+    },
+    {
+        "action levels": [
+            {"level": "lvl 1"},
+            {"level": "lvl 1"},
+            {"level": "lvl 1"},
+            {"level": "lvl 1"},
+            {"level": "lvl 1"},
+            {"level": "lvl 2"},
+            {"level": "lvl 1"},
+            {"level": "lvl 2"}
+        ]
+    },
+    {
+        "gamemaster rolls":[
+            {"roll": "50"},
+            {"roll": "50"},
+            {"roll": "50"},
+            {"roll": "50"},
+            {"roll": "50"},
+            {"roll": "42, 60"},
+            {"roll": "50"},
+            {"roll": "62, 43"}
+        ]
+    },
+    {
+        "notes":[
+            {"note": "-"},
+            {"note": "-"},
+            {"note": "player used a lockpick"},
+            {"note": "stalemate counts as success for player"},
+            {"note": "player learns skill lock picking: 2 (all dice at max)"},
+            {"note": "player's dice roll (50) was lower than GM's highest die (60)"},
+            {"note": "player learns no skill (only one roll is a double)"},
+            {"note": "player learns skill lock picking: 3 (all doubles)"}
+        ]
+    }
+]
