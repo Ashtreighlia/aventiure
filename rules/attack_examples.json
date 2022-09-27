@@ -1,0 +1,72 @@
+[
+  {
+    "skill": "attack a thing: 1",
+    "playerRoll": "42",
+    "monsterLevel": "1",
+    "gmRoll": "50",
+    "result": "fail",
+    "weapon": "normal dagger - 1d10 damage",
+    "damage": "-",
+    "notes": "player misses"
+  },
+  {
+    "skill": "attack a thing: 1",
+    "playerRoll": "64",
+    "monsterLevel": "1",
+    "gmRoll": "50",
+    "result": "success",
+    "weapon": "normal dagger - 1d10 damage",
+    "damage": "5",
+    "notes": "-"
+  },
+  {
+    "skill": "attack a thing: 1",
+    "playerRoll": "77",
+    "monsterLevel": "1",
+    "gmRoll": "50",
+    "result": "success",
+    "weapon": "normal sword - 2d10 damage",
+    "damage": "12",
+    "notes": "player learns new skill sword attack:2 (rolled a double)"
+  },
+  {
+    "skill": "sword attack: 2",
+    "playerRoll": "37, 76",
+    "monsterLevel": "1",
+    "gmRoll": "50",
+    "result": "success",
+    "weapon": "normal sword - 2d10 damage",
+    "damage": "9",
+    "notes": "player's highest roll (76) was higher than GM's roll (50)"
+  },
+  {
+    "skill": "sword attack: 2",
+    "playerRoll": "43, 85",
+    "monsterLevel": "2",
+    "gmRoll": "50,81",
+    "result": "fail",
+    "weapon": "normal sword - 2d10 damage",
+    "damage": "-",
+    "notes": "-"
+  },
+  {
+    "skill": "sword attack: 2",
+    "playerRoll": "23, 65",
+    "monsterLevel": "3",
+    "gmRoll": "72, 17, 50",
+    "result": "fail",
+    "weapon": "normal sword - 2d10 damage",
+    "damage": "-",
+    "notes": "player's highest roll (65) was lower than GM's highest roll (72)"
+  },
+  {
+    "skill": "sword attack: 2",
+    "playerRoll": "58, 74",
+    "monsterLevel": "2",
+    "gmRoll": "21, 62",
+    "result": "success",
+    "weapon": "sharp sword - 2d10 damage + 5 damage",
+    "damage": "9 -> 14",
+    "notes": "player's sword is sharp and does 5 extra damage"
+  }
+]

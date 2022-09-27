@@ -1,0 +1,22 @@
+[
+  {
+    "skill": "heal: 1", 
+    "playerRoll": "24", 
+    "gmRoll": "50", 
+    "result": "fail", 
+    "notes": "-"},
+  {
+    "skill": "heal: 1",
+    "playerRoll": "44",
+    "gmRoll": "50",
+    "result": "fail",
+    "notes": "player learns new skill heal: 2 (rolled a double)"
+  },
+  {
+    "skill": "heal: 2",
+    "playerRoll": "64, 15",
+    "gmRoll": "58, 79",
+    "result": "success",
+    "notes": "player's highest roll was higher than game master's lowest roll"
+  }
+]

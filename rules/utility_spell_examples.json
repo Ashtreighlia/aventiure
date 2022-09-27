@@ -1,0 +1,22 @@
+[
+  {
+    "skill": "light: 1", 
+    "playerRoll": "47", 
+    "gmRoll": "50", 
+    "result": "fail", 
+    "notes": "-"},
+  {
+    "skill": "light: 1",
+    "playerRoll": "22",
+    "gmRoll": "50",
+    "result": "fail",
+    "notes": "player learns new skill light: 2 (rolled a double)"
+  },
+  {
+    "skill": "light: 2",
+    "playerRoll": "76, 43",
+    "gmRoll": "50, 86",
+    "result": "success",
+    "notes": "player's highest roll was higher than game master's lowest roll"
+  }
+]

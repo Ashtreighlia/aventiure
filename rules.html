@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <title>rules of prototype</title>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <nav>
+      <p><a href="/"> < back </a></p>
+      <p><a href="./rules.html">rules</a></p>
+      <p><a href="./armoury.html">armoury</a></p>
+
+      <div>
+        <p><a href="#skills">skills</a></p>
+        <p><a href="#combat">combat</a></p>
+        <p><a href="#magic">magic</a></p>
+        <p><a href="#character">character</a></p>
+        <p><a href="#monster">monster</a></p>
+      </div>
+    </nav>
+
+    <img src="./rules/prototype_banner.webp" alt="prototype_cover" />
+    <h1>the rules of prototype</h1>
+    <p>
+      This is the basic set of rules for prototype. Stick to it, modify it, or
+      completely bend it to your will. Just have fun with it, your creativity is the limit.
+    </p>
+    <h2 id="skills">skills</h2>
+    <p>
+      Unlike most rulesets, prototype does not use predefined skills. The main
+      focus is on developing your character over time. Just like in real life
+      you can do anything - you might suck at it, but at least you can give it a
+      try.
+    </p>
+    <p>
+      The first skill owned by everyone, is <b>do a thing: 1</b> - meaning you
+      can do anything as a level 1 action.
+    </p>
+    <p>
+      someone wants to do something, they and the game master (GM) roll their
+      d10s and d10.0s dice (for a total of 1-100) to decide whether the player
+      was successful. For example, if you want to open a LVL 1 lock with a LVL 1
+      lock picking skill, both roll once. However, if higher levels are
+      involved, both roll as many times as they have levels in their "skill".
+      The highest single roll of both parties counts. If the player wins, he
+      manages to do whatever he wanted to do. However, if the GM wins, the
+      player screws up his action. If there is a tie on the highest roll, the
+      player wins.
+    </p>
+    <p>
+      If a player throws a double, he is granted a level up in whatever he was
+      just trying to do. However he needs to throw as many doubles as he made
+      rolls, meaning, that for a level 3 skill the player has to roll 3 doubles
+      in a row while performing his action to level up his skill.
+    </p>
+    <h3>tools</h3>
+    <p>
+      A player can find and use tools to get an edge over the GM. They increase
+      the likely hood of them succeeding. For more information look up the
+      <a href="armoury.html">armoury of prototype</a>.
+    </p>
+    <h3>examples</h3>
+    <div
+      class="table"
+      x-data="{skill_examples: []}"
+      x-init="fetch('./rules/skill_examples.json')
+           .then(response => response.json())
+           .then(data => skill_examples = data)"
+    >
+      <table>
+        <tr>
+          <th>skill</th>
+          <th>action</th>
+          <th>player's roll</th>
+          <th>used tool</th>
+          <th>skill check</th>
+          <th>GM's roll</th>
+          <th>result</th>
+          <th>notes</th>
+        </tr>
+
+        <template x-for="x in skill_examples">
+          <tr>
+            <td x-text="x.skill"></td>
+            <td x-text="x.action"></td>
+            <td x-text="x.playerRoll"></td>
+            <td x-text="x.tool"></td>
+            <td x-text="x.skillCheckLevel"></td>
+            <td x-text="x.gmRoll"></td>
+            <td x-text="x.result"></td>
+            <td x-text="x.notes"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+    <h2 id="combat">combat</h2>
+    <h3>initiative</h3>
+    <p>
+      The order in combat is determined by a d10 roll. If the GM and a player
+      happen to roll the same value, the player goes first. However, if multiple
+      players roll the same value, they can decide who goes first.
+    </p>
+    <h3>actions</h3>
+    <p>
+      Every player has 2 actions and 1 movement action in combat. They can use
+      their actions however they want, but they cannot do the same action and
+      skill level twice per turn. Attacking, casting a spell, using a skill or
+      even using their normal actions as movement actions counts towards their
+      overall used actions that turn. However, you can only use a particular
+      skill level once per round, which means that any subsequent actions must
+      be made with the next lower skill level. This also applies to other
+      skills, attack skills or spell skills in this round, meaning that you
+      should start with the highest skill level and work your way down from
+      there.
+    </p>
+    <h3>movement</h3>
+    <p>
+      Every player can move 2 blocks per used movement action. As a measurement
+      for distance you may choose any measurement system that fits your bill
+      (should be around 1 meters, 3 feet or 60 barleycorn per block).
+    </p>
+    <h3>attack</h3>
+    <p>
+      Everyone can attack a thing: 1. Just like with the normal skills, you can
+      attack anything you want, however you want, but don't expect to impress a
+      dragon by hitting it with a rock. Here, as with a skill check, the
+      attacker rolls their d10s and d10.0s (for a total of 1-100) according to
+      their skill level for their attack and the defender rolls with their
+      defence skill against the attackers roll. If the attacker wins, the target
+      takes the damage described by their weapon. Otherwise the attacker has
+      missed their target. As with the skills before, you increase your skill
+      level by rolling doubles.
+    </p>
+    <h3>defend</h3>
+    <p>
+      When defending, each player initially resorts to defend a thing: 1. This
+      is the player's defence against an attack as described earlier in the
+      paragraph attack. The ability improves by rolling doubles for the type of
+      armour used.
+    </p>
+    <h3>examples</h3>
+    <h4>attack</h4>
+    <div
+      class="table"
+      x-data="{attack_examples: []}"
+      x-init="fetch('./rules/attack_examples.json')
+           .then(response => response.json())
+           .then(data => attack_examples = data)"
+    >
+      <table>
+        <tr>
+          <th>skill</th>
+          <th>player's roll</th>
+          <th>monster level</th>
+          <th>GM's roll</th>
+          <th>result</th>
+          <th>weapon used</th>
+          <th>damage</th>
+          <th>notes</th>
+        </tr>
+
+        <template x-for="x in attack_examples">
+          <tr>
+            <td x-text="x.skill"></td>
+            <td x-text="x.playerRoll"></td>
+            <td x-text="x.monsterLevel"></td>
+            <td x-text="x.gmRoll"></td>
+            <td x-text="x.result"></td>
+            <td x-text="x.weapon"></td>
+            <td x-text="x.damage"></td>
+            <td x-text="x.notes"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+    <h4>defend</h4>
+    <div
+      class="table"
+      x-data="{defend_examples: []}"
+      x-init="fetch('./rules/defend_examples.json')
+           .then(response => response.json())
+           .then(data => defend_examples = data)"
+    >
+      <table>
+        <tr>
+          <th>monster level</th>
+          <th>GM's roll</th>
+          <th>skill</th>
+          <th>armour used</th>
+          <th>player's roll</th>
+          <th>result</th>
+          <th>damage</th>
+          <th>notes</th>
+        </tr>
+
+        <template x-for="x in defend_examples">
+          <tr>
+            <td x-text="x.monsterLevel"></td>
+            <td x-text="x.gmRoll"></td>
+            <td x-text="x.monsterLevel"></td>
+            <td x-text="x.skill"></td>
+            <td x-text="x.playerRoll"></td>
+            <td x-text="x.result"></td>
+            <td x-text="x.damage"></td>
+            <td x-text="x.notes"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+    <h3>weapons and armour</h3>
+    <p>
+      By using better weapons the attacker can add modifiers to their attack
+      roll. Same goes for the defender by using better armour.
+    </p>
+    <p>
+      For more information look up the
+      <a href="armoury.html">armoury of prototype</a>.
+    </p>
+    <h2 id="magic">magic</h2>
+    <p>
+      As in the previous chapters, spells also have skill levels. Each player
+      knows a number of spells based on their class and race. They can cast all
+      of these as level 1 spells. Every player has a certain amount of mana
+      points according to their picked class and race. Casting a spell uses up
+      one mana point, if you are out of mana points you cannot cast any more
+      spells. Mana points can be refreshed by taking a rest or a mana potion.
+    </p>
+    <h3>spells</h3>
+    <p>
+      There are three different types of spells - attack, support and utility.
+      Utility and support spells are cast against the worst d10 and d10.0 (for
+      1-100) roll of the GM with the same amount of dice as the player has skill
+      levels. Attack spells, on the other hand, are always rolled against the
+      defence level of the attacked, the highest single roll counts. In the
+      event of a tie, the attacked wins. The damage is determined by the wand
+      used and the properties of the spell.
+    </p>
+    <h3>rituals</h3>
+    <p>
+      Unlike spells, rituals are not directl magical influences emanating from a
+      being, but are rather created through concentration. Therefore, rituals do
+      not require checks, but they can only be prepared during a rest.
+    </p>
+    <p>
+      For more information look up the
+      <a href="magic.html">magic in prototype</a>.
+    </p>
+    <h3>examples</h3>
+    <h4>utility spells</h4>
+    <div
+      class="table"
+      x-data="{utility_spell_examples: []}"
+      x-init="fetch('./rules/utility_spell_examples.json')
+           .then(response => response.json())
+           .then(data => utility_spell_examples = data)"
+    >
+      <table>
+        <tr>
+          <th>used skill</th>
+          <th>player's roll</th>
+          <th>GM's roll</th>
+          <th>result</th>
+          <th>notes</th>
+        </tr>
+
+        <template x-for="x in utility_spell_examples">
+          <tr>
+            <td x-text="x.skill"></td>
+            <td x-text="x.playerRoll"></td>
+            <td x-text="x.gmRoll"></td>
+            <td x-text="x.result"></td>
+            <td x-text="x.notes"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+    <h4>support spells</h4>
+    <div
+      class="table"
+      x-data="{support_spell_examples: []}"
+      x-init="fetch('./rules/support_spell_examples.json')
+           .then(response => response.json())
+           .then(data => support_spell_examples = data)"
+    >
+      <table>
+        <tr>
+          <th>used skill</th>
+          <th>player's roll</th>
+          <th>GM's roll</th>
+          <th>result</th>
+          <th>notes</th>
+        </tr>
+
+        <template x-for="x in support_spell_examples">
+          <tr>
+            <td x-text="x.skill"></td>
+            <td x-text="x.playerRoll"></td>
+            <td x-text="x.gmRoll"></td>
+            <td x-text="x.result"></td>
+            <td x-text="x.notes"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+    <h4>attack spells</h4>
+    <div
+      class="table"
+      x-data="{attack_spell_examples: []}"
+      x-init="fetch('./rules/attack_spell_examples.json')
+           .then(response => response.json())
+           .then(data => attack_spell_examples = data)"
+    >
+      <table>
+        <tr>
+          <th>used skill</th>
+          <th>player's roll</th>
+          <th>monster level</th>
+          <th>GM's roll</th>
+          <th>result</th>
+          <th>used wand</th>
+          <th>damage</th>
+          <th>notes</th>
+        </tr>
+
+        <template x-for="x in attack_spell_examples">
+          <tr>
+            <td x-text="x.skill"></td>
+            <td x-text="x.playerRoll"></td>
+            <td x-text="x.monsterLevel"></td>
+            <td x-text="x.gmRoll"></td>
+            <td x-text="x.result"></td>
+            <td x-text="x.wand"></td>
+            <td x-text="x.damage"></td>
+            <td x-text="x.notes"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+    <h2 id="character">character</h2>
+    <p>
+      Like any other TTRPG, prototype also relies heavily on its characters. To
+      simplify the creation of a character sheet for the players, one is already
+      enclosed, what a service!
+    </p>
+    <h3>health</h3>
+    <p>
+      Every character starts out with a base health of 100hp. Health can be
+      replenished by healing as a skill or as a spell. Resting heals you to the
+      maximum, but you have to consume a ration while doing it.
+    </p>
+    <p>
+      Healing can be achieved in three ways. Either by casting a heal spell,
+      using a potion of healing (heals a quarter of your maximum HP) or aiding
+      your wounds for +1d10, if the skill check was successful. Doing this will
+      use all you actions.
+    </p>
+    <h3>classes and races</h3>
+    <p>
+      When creating a character, both the class and race are important for their
+      traits. Prototype tries to keep the system relatively simple so as not to
+      waste too much time (subsequent characters should therefore be relatively
+      easy to create.. dying is part of the game ^^).
+    </p>
+    <p>
+      For more information look up the
+      <a href="character.html">people of prototype</a>.
+    </p>
+    <h3>level up</h3>
+    <p>
+      Levelling is mostly determined by the GM. As a rule of thumb you level up
+      every 6 skills you learned as a character. A level up grants you full
+      health and mana points and can be regarded as a rest with consumed ration.
+      Additionally you gain 1d10 HP on your maximum health, one more spell slot.
+      Every 2 character level ups you learn one new spell.
+    </p>
+    <h3>resting</h3>
+    <p>
+      You can take a rest at any time, but you should seek a safe place first to
+      set up camp. A rest takes around 4 hours and refills all your mana points.
+      If you have consumed a ration your health will be completely restored,
+      this is optional, but highly recommended.
+    </p>
+    <h3>death</h3>
+    <p>
+      Dying is always such a thing. No one wants to, but someone has to. In
+      prototype, death is handled relatively simply. If you are at 0HP, you are
+      unconscious. In prototype you only die if an enemy attacks and hits you
+      while you are unconscious, the damage doesn't matter. So technically your
+      teammates can keep you unconscious after a team fight, so you better be
+      useful to them. You revive teammates by healing them.
+    </p>
+    <h2 id="monster">monster</h2>
+    <p>
+      Since prototype is a very open game system, the monsters you use in your
+      session are as freely inventable as the rest of the game. So go nuts! In
+      the following, we will roughly go into the values such as health and
+      actions per battle as well as attacks, damage and defence of monsters.
+    </p>
+    <p>
+      For more information look up the
+      <a href="monster.html">monsters of prototype</a>.
+    </p>
+  </body>
+</html>

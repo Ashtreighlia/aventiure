@@ -1,0 +1,194 @@
+{
+  "axe": {
+    "type": "melee",
+    "additionalAction": "0",
+    "damageDice": "2",
+    "range": "1",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "claymore": {
+    "type": "melee",
+    "additionalAction": "+1",
+    "damageDice": "3",
+    "range": "2",
+    "handsInUse": "2",
+    "modifierSlot": "1"
+  },
+  "daneaxe": {
+    "type": "melee",
+    "additionalAction": "+1",
+    "damageDice": "3",
+    "range": "2",
+    "handsInUse": "2",
+    "modifierSlot": "1"
+  },
+  "dagger": {
+    "type": "melee",
+    "additionalAction": "0",
+    "damageDice": "1",
+    "range": "1",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "flail": {
+    "type": "melee",
+    "additionalAction": "+1",
+    "damageDice": "2",
+    "range": "2",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "mace": {
+    "type": "melee",
+    "additionalAction": "0",
+    "damageDice": "2",
+    "range": "1",
+    "handsInUse": "1",
+    "modifierSlot": "2"
+  },
+  "shield": {
+    "type": "melee",
+    "additionalAction": "0",
+    "damageDice": "1",
+    "range": "1",
+    "handsInUse": "1",
+    "modifierSlot": "0"
+  },
+  "sword": {
+    "type": "melee",
+    "additionalAction": "0",
+    "damageDice": "2",
+    "range": "1",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "warhammer": {
+    "type": "melee",
+    "additionalAction": "+1",
+    "damageDice": "3",
+    "range": "1",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "halberd": {
+    "type": "melee",
+    "additionalAction": "1",
+    "damageDice": "3",
+    "range": "3",
+    "handsInUse": "2",
+    "modifierSlot": "1"
+  },
+  "pike": {
+    "type": "melee",
+    "additionalAction": "0",
+    "damageDice": "1",
+    "range": "4",
+    "handsInUse": "2",
+    "modifierSlot": "2"
+  },
+  "voulge": {
+    "type": "melee",
+    "additionalAction": "+1",
+    "damageDice": "3",
+    "range": "3",
+    "handsInUse": "2",
+    "modifierSlot": "2"
+  },
+  "arabalest": {
+    "type": "ranged",
+    "additionalAction": "+1",
+    "damageDice": "4",
+    "range": "12",
+    "handsInUse": "2",
+    "modifierSlot": "2"
+  },
+  "crossbow": {
+    "type": "ranged",
+    "additionalAction": "+1",
+    "damageDice": "3",
+    "range": "10",
+    "handsInUse": "2",
+    "modifierSlot": "1"
+  },
+  "long bow": {
+    "type": "ranged",
+    "additionalAction": "0",
+    "damageDice": "2",
+    "range": "10",
+    "handsInUse": "2",
+    "modifierSlot": "2"
+  },
+  "sling": {
+    "type": "ranged",
+    "additionalAction": "0",
+    "damageDice": "1",
+    "range": "8",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "shortbow": {
+    "type": "ranged",
+    "additionalAction": "0",
+    "damageDice": "1",
+    "range": "8",
+    "handsInUse": "2",
+    "modifierSlot": "1"
+  },
+  "hand_crossbow": {
+    "type": "ranged",
+    "additionalAction": "+1",
+    "damageDice": "2",
+    "range": "8",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "fingers": {
+    "type": "magic",
+    "additionalAction": "0",
+    "damageDice": "1",
+    "range": "4",
+    "handsInUse": "1",
+    "modifierSlot": "0"
+  },
+  "amber_staff": {
+    "type": "magic",
+    "additionalAction": "0",
+    "damageDice": "2",
+    "range": "6",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "opal_staff": {
+    "type": "magic",
+    "additionalAction": "0",
+    "damageDice": "2",
+    "range": "8",
+    "handsInUse": "1",
+    "modifierSlot": "2"
+  },
+  "sapphire_staff": {
+    "type": "magic",
+    "additionalAction": "0",
+    "damageDice": "3",
+    "range": "8",
+    "handsInUse": "1",
+    "modifierSlot": "1"
+  },
+  "obsidian_staff": {
+    "type": "magic",
+    "additionalAction": "0",
+    "damageDice": "3",
+    "range": "10",
+    "handsInUse": "2",
+    "modifierSlot": "2"
+  },
+  "ruby_staff": {
+    "type": "magic",
+    "additionalAction": "+1",
+    "damageDice": "4",
+    "range": "12",
+    "handsInUse": "2",
+    "modifierSlot": "3"
+  }
+}

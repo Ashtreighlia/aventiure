@@ -1,0 +1,88 @@
+body {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.parallax {
+  height: 100vh;
+}
+
+.background {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.art {
+  background-image: url(../assets/prototype_background.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.lettering {
+  background-image: url(../assets/prototype_lettering.gif);
+  background-position: center 25%;
+  background-size: 70vmin;
+}
+
+.scroll_icon {
+  background-image: url(../assets/down.svg);
+  background-position: center 85%;
+  background-size: 5vmin;
+  opacity: 50%;
+
+  animation-name: wiggle;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes wiggle {
+  0% {
+    background-position: center 85%;
+  }
+  50% {
+    background-position: center 86%;
+  }
+  100% {
+    background-position: center 85%;
+  }
+}
+
+.content {
+  height: 100vh;
+  margin: auto;
+  max-width: 960px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+}
+
+.links a {
+  background-color: var(--background-color_3);
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 25px 75px 25px 75px;
+  text-align: center;
+  width: auto;
+}
+
+.links a:hover {
+  background-color: var(--background-color_2);
+  outline: 2.5px solid var(--link-color);
+  transition-duration: 125ms;
+}

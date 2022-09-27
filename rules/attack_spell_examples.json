@@ -1,0 +1,32 @@
+[
+  {
+    "skill": "fire ball: 1",
+    "playerRoll": "42",
+    "monsterLevel": "1",
+    "gmRoll": "50",
+    "result": "fail",
+    "wand": "hands - 1d10 damage",
+    "damage": "8",
+    "notes": "player misses"
+  },
+  {
+    "skill": "lightning bolt: 1",
+    "playerRoll": "65",
+    "monsterLevel": "1",
+    "gmRoll": "50",
+    "result": "success",
+    "wand": "amber staff - 2d10 damage",
+    "damage": "12",
+    "notes": "spell grants a additional +1d10 damage to target"
+  },
+  {
+    "skill": "fire ball: 2",
+    "playerRoll": "20, 55",
+    "monsterLevel": "3",
+    "gmRoll": "35; 75; 17, 86, 34",
+    "result": "fail",
+    "wand": "sapphire staff - 3d10 damage",
+    "damage": "16",
+    "notes": "every monster in area of effect has to counter roll"
+  }
+]

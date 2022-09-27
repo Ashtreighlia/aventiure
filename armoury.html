@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <title>armoury of prototype</title>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+    <nav>
+      <p><a href="./rules.html">< back</a></p>
+    </nav>
+
+    <img src="./armoury/armoury_banner.webp" alt="prototype_cover" />
+    <h1>the armoury of prototype</h1>
+    <p>
+      A page full of armour, weapons and tools. The title itself should be
+      pretty explanitory by it's self.
+    </p>
+
+    <h2>armour</h2>
+    <p>
+      Armour gives you an edge in protecting yourself from damage. It can be
+      made of any material and can be as simple as a leather jacket or as
+      complex as a full suit of plate armour.
+    </p>
+    <div
+      class="table"
+      x-data="{armours: {}}"
+      x-init="fetch('./armoury/armour.json')
+         .then(response => response.json())
+         .then(data => armours = data)"
+    >
+      <table>
+        <tr>
+          <th>armour</th>
+          <th>movement</th>
+          <th>defense bonus</th>
+          <th>modifier slots</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(armours)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.additionalMovement"></td>
+            <td x-text="x.defenseBonus"></td>
+            <td x-text="x.modifierSlot"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+
+    <h2>weapons</h2>
+    <p>
+      Weapons are used to deal damage to your enemies. They can be made of any
+      material and can be as simple as a knife or as a magical as a ruby staff.
+    </p>
+
+    <h3>melee weapons</h3>
+    <div
+      class="table"
+      x-data="{weapons: {}}"
+      x-init="fetch('./armoury/weapons.json')
+         .then(response => response.json())
+         .then(data => {
+          for (var weapon in data) {
+            if(data[weapon].type === 'melee') {
+                var name = String(weapon);
+                weapons[weapon] = data[weapon];
+            }
+          }
+         })"
+    >
+      <table>
+        <tr>
+          <th>weapon</th>
+          <th>action use</th>
+          <th>damage</th>
+          <th>range</th>
+          <th>hands used</th>
+          <th>modifier slots</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(weapons)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.additionalAction"></td>
+            <td x-text="x.damageDice + 'd10'"></td>
+            <td x-text="x.range"></td>
+            <td x-text="x.handsInUse"></td>
+            <td x-text="x.modifierSlot"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+
+    <h3>ranged weapons</h3>
+    <div
+      class="table"
+      x-data="{weapons: {}}"
+      x-init="fetch('./armoury/weapons.json')
+         .then(response => response.json())
+         .then(data => {
+          for (var weapon in data) {
+            if(data[weapon].type === 'ranged') {
+                var name = String(weapon);
+                weapons[weapon] = data[weapon];
+            }
+          }
+         })"
+    >
+      <table>
+        <tr>
+          <th>weapon</th>
+          <th>action</th>
+          <th>damage</th>
+          <th>range</th>
+          <th>hands used</th>
+          <th>modifier slots</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(weapons)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.additionalAction"></td>
+            <td x-text="x.damageDice + 'd10'"></td>
+            <td x-text="x.range"></td>
+            <td x-text="x.handsInUse"></td>
+            <td x-text="x.modifierSlot"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+
+    <h3>magic weapons</h3>
+    <div
+      class="table"
+      x-data="{weapons: {}}"
+      x-init="fetch('./armoury/weapons.json')
+         .then(response => response.json())
+         .then(data => {
+          for (var weapon in data) {
+            if(data[weapon].type === 'magic') {
+                var name = String(weapon);
+                weapons[weapon] = data[weapon];
+            }
+          }
+         })"
+    >
+      <table>
+        <tr>
+          <th>weapon</th>
+          <th>action</th>
+          <th>damage</th>
+          <th>range</th>
+          <th>hands used</th>
+          <th>modifier slots</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(weapons)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.additionalAction"></td>
+            <td x-text="x.damageDice + 'd10'"></td>
+            <td x-text="x.range"></td>
+            <td x-text="x.handsInUse"></td>
+            <td x-text="x.modifierSlot"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+  </body>
+</html>

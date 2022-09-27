@@ -1,0 +1,73 @@
+[
+  {"skill": "do a thing: 1", "action": "open a lock", "playerRoll": "34", "tool": "-", "skillCheckLevel": "level 1", "gmRoll": "50", "result": "fail", "notes": "-"},
+  {
+    "skill": "do a thing: 1",
+    "action": "open a lock",
+    "playerRoll": "67",
+    "tool": "-",
+    "skillCheckLevel": "level 1",
+    "gmRoll": "50",
+    "result": "success",
+    "notes": "-"
+  },
+  {
+    "skill": "do a thing: 1",
+    "action": "open a lock",
+    "playerRoll": "48",
+    "tool": "normal lock pick: +5 -> 53",
+    "skillCheckLevel": "level 1",
+    "gmRoll": "50",
+    "result": "success",
+    "notes": "player used a lockpick"
+  },
+  {
+    "skill": "do a thing: 1",
+    "action": "open a lock",
+    "playerRoll": "50",
+    "tool": "-",
+    "skillCheckLevel": "level 1",
+    "gmRoll": "50",
+    "result": "success",
+    "notes": "a stalemate counts as a success for the player"
+  },
+  {
+    "skill": "do a thing: 1",
+    "action": "open a lock",
+    "playerRoll": "33",
+    "tool": "-",
+    "skillCheckLevel": "level 1",
+    "gmRoll": "50",
+    "result": "fail",
+    "notes": "player learns new skill lock picking: 2 (rolled a double)"
+  },
+  {
+    "skill": "do a thing: 1",
+    "action": "open a lock",
+    "playerRoll": "50",
+    "tool": "-",
+    "skillCheckLevel": "level 2",
+    "gmRoll": "42, 60",
+    "result": "fail",
+    "notes": "player's roll (50) was lower than GM's highest roll (60)"
+  },
+  {
+    "skill": "lock picking: 2",
+    "action": "open a lock",
+    "playerRoll": "44, 70",
+    "tool": "-",
+    "skillCheckLevel": "level 1",
+    "gmRoll": "50",
+    "result": "success",
+    "notes": "player's highest roll (70) was higher than GM's roll (50)"
+  },
+  {
+    "skill": "do a thing: 2",
+    "action": "open a lock",
+    "playerRoll": "22, 66",
+    "tool": "-",
+    "skillCheckLevel": "level 2",
+    "gmRoll": "62, 43",
+    "result": "success",
+    "notes": "player learns skill lock picking: 3 (all doubles)"
+  }
+]
