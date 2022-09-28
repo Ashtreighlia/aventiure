@@ -24,19 +24,19 @@ h6 {
 }
 
 .art {
-  background-image: url(../assets/aventiure_background.webp);
+  background-image: url(../index/aventiure_background.webp);
   background-position: center;
   background-size: cover;
 }
 
 .lettering {
-  background-image: url(../assets/aventiure_lettering.png);
+  background-image: url(../index/aventiure_lettering.png);
   background-position: center 25%;
   background-size: 70vmin;
 }
 
 .scroll_icon {
-  background-image: url(../assets/down.svg);
+  background-image: url(../index/down.svg);
   background-position: center 85%;
   background-size: 5vmin;
   opacity: 50%;

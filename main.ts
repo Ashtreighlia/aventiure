@@ -12,70 +12,70 @@ async function handleRequest(request: Request): Promise<Response> {
 
   try {
     if (filetype === "/") {
-      const file = await Deno.readFile("./index.html");
+      const file = await Deno.readFile("./src/index.html");
       return new Response(file, {
         headers: {
           "content-type": "text/html",
         },
       });
     } else if (filetype == "html") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "text/html",
         },
       });
     } else if (filetype == "css") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "text/css",
         },
       });
     } else if (filetype == "js") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "text/javascript",
         },
       });
     } else if (filetype == "json") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "application/json",
         },
       });
     } else if (filetype == "webp") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "image/webp",
         },
       });
     } else if (filetype == "png") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "image/png",
         },
       });
     } else if (filetype == "svg") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "image/svg+xml",
         },
       });
     } else if (filetype == "ttf") {
-      const file = await Deno.readFile(path);
+      const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {
           "content-type": "font/ttf",
         },
       });
     } else if (filetype == "ico") {
-      const file = await Deno.readFile("./assets/" + path);
+      const file = await Deno.readFile("./src/index/" + path);
       return new Response(file, {
         headers: {
           "content-type": "image/x-icon",

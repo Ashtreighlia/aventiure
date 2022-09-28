@@ -23,14 +23,9 @@ window.addEventListener(
 var tooSmall = false;
 function checkWindowSize() {
   var w = window.innerWidth;
-  if (w < 1280) {
-    document.body.innerHTML =
-      "<div style='margin-top: 40%;'><p style='text-align: center;'>This site is not optimized for smaller screen widths - yet.</p><h1 style='border-style: none; margin-top: -20px;'>Sowwy!</h1></div>";
+  if (w < 1280 & !tooSmall) {
+    alert("This site is not optimized for smaller screen widths - sowwy!!");
     tooSmall = true;
-  } else {
-    if (tooSmall) {
-      window.location.reload();
-    }
   }
 }
 
