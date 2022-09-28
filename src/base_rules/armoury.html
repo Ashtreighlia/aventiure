@@ -19,7 +19,7 @@
     <h1>the armoury of âventiure</h1>
     <p>
       A page full of armour, weapons and tools. The title itself should be
-      pretty explanitory by it's self.
+      pretty explanitory by itself.
     </p>
 
     <h2>armour</h2>
@@ -28,6 +28,8 @@
       made of any material and can be as simple as a leather jacket or as
       complex as a full suit of plate armour.
     </p>
+
+    <h3>armour types</h3>
     <div
       class="table"
       x-data="{armours: {}}"
@@ -39,16 +41,46 @@
         <tr>
           <th>armour</th>
           <th>movement</th>
-          <th>defense bonus</th>
+          <th>defense</th>
           <th>modifier slots</th>
         </tr>
 
         <template x-for="[key, x] of Object.entries(armours)">
           <tr>
             <td x-text="key.replaceAll('_', ' ')"></td>
-            <td x-text="x.additionalMovement"></td>
-            <td x-text="x.defenseBonus"></td>
+            <td x-text="x.movement"></td>
+            <td x-text="x.defense"></td>
             <td x-text="x.modifierSlot"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+
+    <h3>armour modifiers</h3>
+    <div
+      class="table"
+      x-data="{modifiers: {}}"
+      x-init="fetch('./armoury/modifier_armour.json')
+         .then(response => response.json())
+         .then(data => modifiers = data)"
+    >
+      <table>
+        <tr>
+          <th>modifier</th>
+          <th>propability</th>
+          <th>defense</th>
+          <th>self damage/heal</th>
+          <th>mana points</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(modifiers)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.propability[0] + ' to ' + x.propability[1]"></td>
+            <td x-text="x.defense"></td>
+            <td x-text="x.selfDamageHeal"></td>
+            <td x-text="x.mana"></td>
           </tr>
         </template>
       </table>
@@ -89,7 +121,7 @@
         <template x-for="[key, x] of Object.entries(weapons)">
           <tr>
             <td x-text="key.replaceAll('_', ' ')"></td>
-            <td x-text="x.additionalAction"></td>
+            <td x-text="x.actionUse"></td>
             <td x-text="x.damageDice + 'd10'"></td>
             <td x-text="x.range"></td>
             <td x-text="x.handsInUse"></td>
@@ -118,7 +150,7 @@
       <table>
         <tr>
           <th>weapon</th>
-          <th>action</th>
+          <th>action use</th>
           <th>damage</th>
           <th>range</th>
           <th>hands used</th>
@@ -128,7 +160,7 @@
         <template x-for="[key, x] of Object.entries(weapons)">
           <tr>
             <td x-text="key.replaceAll('_', ' ')"></td>
-            <td x-text="x.additionalAction"></td>
+            <td x-text="x.actionUse"></td>
             <td x-text="x.damageDice + 'd10'"></td>
             <td x-text="x.range"></td>
             <td x-text="x.handsInUse"></td>
@@ -157,7 +189,7 @@
       <table>
         <tr>
           <th>weapon</th>
-          <th>action</th>
+          <th>action use</th>
           <th>damage</th>
           <th>range</th>
           <th>hands used</th>
@@ -167,11 +199,74 @@
         <template x-for="[key, x] of Object.entries(weapons)">
           <tr>
             <td x-text="key.replaceAll('_', ' ')"></td>
-            <td x-text="x.additionalAction"></td>
+            <td x-text="x.actionUse"></td>
             <td x-text="x.damageDice + 'd10'"></td>
             <td x-text="x.range"></td>
             <td x-text="x.handsInUse"></td>
             <td x-text="x.modifierSlot"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+
+    <h3>weapon modifiers</h3>
+    <div
+      class="table"
+      x-data="{modifiers: {}}"
+      x-init="fetch('./armoury/modifier_weapon.json')
+         .then(response => response.json())
+         .then(data => modifiers = data)"
+    >
+      <table>
+        <tr>
+          <th>modifier</th>
+          <th>propability</th>
+          <th>damage</th>
+          <th>range</th>
+          <th>self damage/heal</th>
+          <th>action use</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(modifiers)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.propability[0] + ' to ' + x.propability[1]"></td>
+            <td x-text="x.damage"></td>
+            <td x-text="x.range"></td>
+            <td x-text="x.selfDamageHeal"></td>
+            <td x-text="x.actionUse"></td>
+          </tr>
+        </template>
+      </table>
+      <table id="armour"></table>
+    </div>
+
+    <h2>tools</h2>
+    <p>
+      Tools are used to help you in your adventures. They can be used to help
+      you in skill checks, gain access to new areas or even give you entire new
+      options in on your quests.
+    </p>
+    <div
+      class="table"
+      x-data="{modifiers: {}}"
+      x-init="fetch('./armoury/modifier_tool.json')
+         .then(response => response.json())
+         .then(data => modifiers = data)"
+    >
+      <table>
+        <tr>
+          <th>modifier</th>
+          <th>propability</th>
+          <th>roll</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(modifiers)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.propability[0] + ' to ' + x.propability[1]"></td>
+            <td x-text="x.roll"></td>
           </tr>
         </template>
       </table>

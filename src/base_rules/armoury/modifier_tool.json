@@ -1,0 +1,18 @@
+{
+  "normal": {
+    "propability": ["0", "69"],
+    "roll": "+5"
+  },
+  "quick": {
+    "propability": ["70", "94"],
+    "roll": "+10"
+  },
+  "hard": {
+    "propability": ["95", "99"],
+    "roll": "+15"
+  },
+  "lucky": {
+    "propability": ["100", "100"],
+    "roll": "+20"
+  }
+}

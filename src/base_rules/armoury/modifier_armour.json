@@ -1,0 +1,56 @@
+{
+  "bridle": {
+    "propability": ["1", "4"],
+    "defense": "-5",
+    "selfDamageHeal": "-5",
+    "mana": "0"
+  },
+  "unlucky": {
+    "propability": ["5", "14"],
+    "defense": "-10",
+    "selfDamageHeal": "0",
+    "mana": "0"
+  },
+  "rusty": {
+    "propability": ["15", "29"],
+    "defense": "-5",
+    "selfDamageHeal": "0",
+    "mana": "0"
+  },
+  "normal": {
+    "propability": ["30", "69"],
+    "defense": "0",
+    "selfDamageHeal": "0",
+    "mana": "0"
+  },
+  "hardened": {
+    "propability": ["70", "79"],
+    "defense": "+5",
+    "selfDamageHeal": "0",
+    "mana": "0"
+  },
+  "reinforced": {
+    "propability": ["80", "89"],
+    "defense": "+10",
+    "selfDamageHeal": "0",
+    "mana": "0"
+  },
+  "charmed": {
+    "propability": ["90", "94"],
+    "defense": "0",
+    "selfDamageHeal": "0",
+    "mana": "+1"
+  },
+  "demonic": {
+    "propability": ["95", "99"],
+    "defense": "0",
+    "selfDamageHeal": "-5",
+    "mana": "+2"
+  },
+  "angelic": {
+    "propability": ["100", "100"],
+    "defense": "0",
+    "selfDamageHeal": "+5",
+    "mana": "+1"
+  }
+}

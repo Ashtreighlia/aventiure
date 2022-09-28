@@ -1,3 +1,107 @@
 {
-  
+  "mangled": {
+    "propability": ["1", "4"],
+    "damage": "-10",
+    "range": "-1",
+    "selfDamageHeal": "0",
+    "actionUse": "0"
+  },
+  "broken": {
+    "propability": ["5", "9"],
+    "damage": "-5",
+    "range": "0",
+    "selfDamageHeal": "-5",
+    "actionUse": "0"
+  },
+  "dull": {
+    "propability": ["10", "14"],
+    "damage": "-5",
+    "range": "0",
+    "selfDamageHeal": "0",
+    "actionUse": "0"
+  },
+  "unlucky": {
+    "propability": ["15", "19"],
+    "damage": "-5",
+    "range": "0",
+    "selfDamageHeal": "+5",
+    "actionUse": "0"
+  },
+  "bulky": {
+    "propability": ["20", "24"],
+    "damage": "0",
+    "range": "+1",
+    "selfDamageHeal": "0",
+    "actionUse": "+1"
+  },
+  "annoying": {
+    "propability": ["25", "29"],
+    "damage": "0",
+    "range": "0",
+    "selfDamageHeal": "0",
+    "actionUse": "+1"
+  },
+  "short": {
+    "propability": ["30", "34"],
+    "damage": "0",
+    "range": "-1",
+    "selfDamageHeal": "0",
+    "actionUse": "0"
+  },
+  "normal": {
+    "propability": ["35", "64"],
+    "damage": "0",
+    "range": "0",
+    "selfDamageHeal": "0",
+    "actionUse": "0"
+  },
+  "sharp": {
+    "propability": ["65", "69"],
+    "damage": "+5",
+    "range": "0",
+    "selfDamageHeal": "0",
+    "actionUse": "0"
+  },
+  "light": {
+    "propability": ["70", "74"],
+    "damage": "0",
+    "range": "0",
+    "selfDamageHeal": "0",
+    "actionUse": "-1"
+  },
+  "ruthless": {
+    "propability": ["75", "79"],
+    "damage": "+10",
+    "range": "0",
+    "selfDamageHeal": "-5",
+    "actionUse": "0"
+  },
+  "heavy": {
+    "propability": ["80", "84"],
+    "damage": "+5",
+    "range": "0",
+    "selfDamageHeal": "0",
+    "actionUse": "+1"
+  },
+  "demonic": {
+    "propability": ["85", "89"],
+    "damage": "-5",
+    "range": "0",
+    "selfDamageHeal": "+10",
+    "actionUse": "0"
+  },
+  "mythical": {
+    "propability": ["90", "94"],
+    "damage": "+5",
+    "range": "+1",
+    "selfDamageHeal": "0",
+    "actionUse": "-1"
+  },
+  "celestial": {
+    "propability": ["95", "100"],
+    "damage": "+10",
+    "range": "0",
+    "selfDamageHeal": "+5",
+    "actionUse": "0"
+  }
 }

@@ -1,22 +1,22 @@
 {
   "cloth": {
-    "additionalMovement": "+1",
-    "defenseBonus": "0",
+    "movement": "+1",
+    "defense": "0",
     "modifierSlot": "2"
   },
   "leather": {
-    "additionalMovement": "+1",
-    "defenseBonus": "5",
+    "movement": "+1",
+    "defense": "5",
     "modifierSlot": "1"
   },
   "scale": {
-    "additionalMovement": "0",
-    "defenseBonus": "10",
+    "movement": "0",
+    "defense": "10",
     "modifierSlot": "1"
   },
   "plate": {
-    "additionalMovement": "0",
-    "defenseBonus": "15",
+    "movement": "0",
+    "defense": "15",
     "modifierSlot": "1"
   }
 }
