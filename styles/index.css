@@ -24,13 +24,13 @@ h6 {
 }
 
 .art {
-  background-image: url(../assets/prototype_background.webp);
+  background-image: url(../assets/aventiure_background.webp);
   background-position: center;
   background-size: cover;
 }
 
 .lettering {
-  background-image: url(../assets/prototype_lettering.gif);
+  background-image: url(../assets/aventiure_lettering.png);
   background-position: center 25%;
   background-size: 70vmin;
 }

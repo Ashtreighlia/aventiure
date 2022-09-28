@@ -53,11 +53,11 @@ async function handleRequest(request: Request): Promise<Response> {
           "content-type": "image/webp",
         },
       });
-    } else if (filetype == "gif") {
+    } else if (filetype == "png") {
       const file = await Deno.readFile(path);
       return new Response(file, {
         headers: {
-          "content-type": "image/gif",
+          "content-type": "image/png",
         },
       });
     } else if (filetype == "svg") {
@@ -72,6 +72,13 @@ async function handleRequest(request: Request): Promise<Response> {
       return new Response(file, {
         headers: {
           "content-type": "font/ttf",
+        },
+      });
+    } else if (filetype == "ico") {
+      const file = await Deno.readFile("./assets/" + path);
+      return new Response(file, {
+        headers: {
+          "content-type": "image/x-icon",
         },
       });
     }else {
