@@ -2,14 +2,14 @@
 //  window.scrollTo(0, 0);
 //};
 
+var windowHeight = window.innerHeight;
 function amountscrolled() {
-  var scrollTop = window.pageYOffset;
-  var height = window.innerHeight;
-  scrollTop = 100 - (scrollTop / height) * 100;
-  if (scrollTop < 0) {
-    scrollTop = 0;
+  var position = window.pageYOffset;
+  newOpacity = 100 - (position / windowHeight) * 100;
+  if (newOpacity < 0) {
+    newOpacity = 0;
   }
-  document.getElementById("parallax").style.opacity = scrollTop + "%";
+  document.getElementById("parallax").style.opacity = newOpacity + "%";
 }
 
 window.addEventListener(
@@ -19,6 +19,17 @@ window.addEventListener(
   },
   false
 );
+
+async function scrollDown(){
+  for(let i = window.pageYOffset; i < windowHeight; i+=40){
+    if(i>windowHeight){
+      i = windowHeight;
+    }
+    await new Promise(r => setTimeout(r, 1));
+    window.scrollTo(0, i);
+  }
+}
+
 
 var tooSmall = false;
 function checkWindowSize() {
@@ -33,6 +44,7 @@ checkWindowSize();
 addEventListener(
   "resize",
   function () {
+    windowHeight = window.innerHeight;
     checkWindowSize();
   },
   false
