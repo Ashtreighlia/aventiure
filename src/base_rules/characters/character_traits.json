@@ -1,0 +1,24 @@
+{
+  "health": {
+    "sturdy": "+25",
+    "tough": "+10",
+    "average": "0",
+    "fragile": "-10",
+    "slender": "-25",
+    "squishy": "-50"
+  },
+  "vision": {
+    "normal_vision": "bad vision in dark lighting conditions",
+    "dawn_vision": "better vision in dark lighting conditions",
+    "superior_vision": "excelent vision in dark lighting conditions"
+  },
+  "luck_on_rolls": {
+    "lucky": "+5",
+    "jack_of_all_trades": "+2",
+    "normal": "0"
+  },
+  "special_skill": {
+    "curing": "+10 on heal spell rolls",
+    "first_aid": "treating wounds does Xd10 healing"
+  }
+}

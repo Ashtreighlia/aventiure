@@ -1,0 +1,17 @@
+{
+  "defense": {
+    "hardy": "+5",
+    "average": "0",
+    "tender": "-5"
+  },
+  "actions": {
+    "prodigy": "3",
+    "capable": "2",
+    "clumsy": "1"
+  },
+  "movementDistance": {
+    "agile": "3",
+    "sporty": "2",
+    "sluggish": "1"
+  }
+}

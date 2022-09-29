@@ -1,0 +1,18 @@
+{
+  "mana": {
+    "magical": "4",
+    "paranormal": "3",
+    "knowing": "2",
+    "dull": "1"
+  },
+  "spells": {
+    "intuitive": "3",
+    "knowing": "2",
+    "ignorant": "1"
+  },
+  "rituals": {
+    "mystical": "3",
+    "ritualistic": "2",
+    "mundane": "1"
+  }
+}
