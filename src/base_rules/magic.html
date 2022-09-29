@@ -8,7 +8,7 @@
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
 
-    <title>armoury of âventiure</title>
+    <title>magic of âventiure</title>
   </head>
   <body onload="document.body.style.opacity='1'">
     <nav>
@@ -17,5 +17,129 @@
 
     <img src="./magic/magic_banner.webp" alt="magic_cover" />
     <h1>the magic of âventiure</h1>
+
+    <h2>spells</h2>
+
+    <h3>utility spells</h3>
+    <div
+      class="table"
+      x-data="{spells: {}}"
+      x-init="fetch('./magic/spells_utility.json')
+         .then(response => response.json())
+         .then(data => spells = data)"
+    >
+      <table>
+        <tr>
+          <th>spell</th>
+          <th>effect</th>
+          <th>area of effect</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(spells)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.effect"></td>
+            <td x-text="x.aoe"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+
+    <h3>support spells</h3>
+    <div
+      class="table"
+      x-data="{spells: {}}"
+      x-init="fetch('./magic/spells_support.json')
+         .then(response => response.json())
+         .then(data => spells = data)"
+    >
+      <table>
+        <tr>
+          <th>spell</th>
+          <th>type</th>
+          <th>effect</th>
+          <th>roll for target</th>
+          <th>damage for target</th>
+          <th>heal for target</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(spells)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.type"></td>
+            <td x-text="x.effect"></td>
+            <td x-text="x.rollTarget"></td>
+            <td x-text="x.damageTarget"></td>
+            <td x-text="x.healTarget"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+
+    <h3>attack spells</h3>
+    <div
+      class="table"
+      x-data="{spells: {}}"
+      x-init="fetch('./magic/spells_attack.json')
+         .then(response => response.json())
+         .then(data => spells = data)"
+    >
+      <table>
+        <tr>
+          <th>spell</th>
+          <th>effect on success</th>
+          <th>effect on failure</th>
+          <th>damage</th>
+          <th>action</th>
+          <th>area of effect</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(spells)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.successEffect"></td>
+            <td x-text="x.failEffect"></td>
+            <td x-text="x.damageTarget"></td>
+            <td x-text="x.actionTarget"></td>
+            <td x-text="x.aoe"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+
+    <h2>rituals</h2>
+    <div
+      class="table"
+      x-data="{rituals: {}}"
+      x-init="fetch('./magic/rituals.json')
+         .then(response => response.json())
+         .then(data => rituals = data)"
+    >
+      <table>
+        <tr>
+          <th>ritual</th>
+          <th>propability</th>
+          <th>effect</th>
+          <th>special effect</th>
+          <th>roll</th>
+          <th>damage to target</th>
+          <th>heal</th>
+          <th>mana</th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(rituals)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.porpability[0] + ' to ' + x.porpability[1]"></td>
+            <td x-text="x.effect"></td>
+            <td x-text="x.special"></td>
+            <td x-text="x.roll"></td>
+            <td x-text="x.damageTarget"></td>
+            <td x-text="x.heal"></td>
+            <td x-text="x.mana"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
   </body>
 </html>

@@ -1,0 +1,37 @@
+{
+  "fire_blade": {
+    "successEffect": "thrust an enemy with a blade made of fire",
+    "failEffect": "burn yourself",
+    "damageTarget": "+5",
+    "actionTarget": "0",
+    "aoe": "0"
+  },
+  "lightning_bolt": {
+    "successEffect": "strike a random enemy with a bolt of lightning",
+    "failEffect": "strike a random ally",
+    "damageTarget": "+10",
+    "actionTarget": "0",
+    "aoe": "0"
+  },
+  "blizzard": {
+    "successEffect": "freeze all enemies in an area with a blizzard",
+    "failEffect": "freeze all your allies surrounding you instead",
+    "damageTarget": "0",
+    "actionTarget": "-1",
+    "aoe": "5"
+  },
+  "fire_ball": {
+    "successEffect": "strike all enemies in an area with a ball of fire for split damage",
+    "failEffect": "strike all your allies surrounding you instead",
+    "damageTarget": "+15",
+    "actionTarget": "0",
+    "aoe": "2"
+  },
+  "necromancy": {
+    "successEffect": "summon a X-level class 1-demon to fight for you",
+    "failEffect": "summon one for your enemy",
+    "damageTarget": "0",
+    "actionTarget": "0",
+    "aoe": "0"
+  }
+}

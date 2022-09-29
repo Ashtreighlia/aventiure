@@ -1,0 +1,65 @@
+{
+  "rally": {
+    "porpability": ["1", "14"],
+    "effect": "heal yourself",
+    "special": "-",
+    "roll": "0",
+    "damageTarget": "0",
+    "heal": "+10",
+    "mana": "-1"
+  },
+  "concentrate": {
+    "porpability": ["15", "29"],
+    "effect": "strengthen your mind",
+    "special": "-",
+    "roll": "+10",
+    "damageTarget": "0",
+    "heal": "0",
+    "mana": "0"
+  },
+  "leech": {
+    "porpability": ["30", "44"],
+    "effect": "drain life from a target",
+    "special": "-",
+    "roll": "0",
+    "damageTarget": "+10",
+    "heal": "+10",
+    "mana": "0"
+  },
+  "replenish": {
+    "porpability": ["45", "59"],
+    "effect": "regain mana",
+    "special": "-",
+    "roll": "0",
+    "damageTarget": "0",
+    "heal": "-10",
+    "mana": "+2"
+  },
+  "curse": {
+    "porpability": ["60", "74"],
+    "effect": "curse a target",
+    "special": "target skips his next turn",
+    "roll": "0",
+    "damageTarget": "+10",
+    "heal": "0",
+    "mana": "-1"
+  },
+  "overload": {
+    "porpability": ["75", "89"],
+    "effect": "overload yourself",
+    "special": "you skip your next turn",
+    "roll": "+20",
+    "damageTarget": "+10",
+    "heal": "0",
+    "mana": "0"
+  },
+  "quicken": {
+    "porpability": ["90", "100"],
+    "effect": "you pull yourself together",
+    "special": "you get an extra action this turn",
+    "roll": "-10",
+    "damageTarget": "-5",
+    "heal": "0",
+    "mana": "0"
+  }
+}

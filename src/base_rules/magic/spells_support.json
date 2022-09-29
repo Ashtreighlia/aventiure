@@ -1,0 +1,44 @@
+{
+  "courage": {
+    "type": "def",
+    "effect": "make an ally brave their pain",
+    "rollTarget": "+5",
+    "damageTarget": "-5",
+    "healTarget": "+5"
+  },
+  "cleanse": {
+    "type": "sup",
+    "effect": "remove a posion/curse effect",
+    "rollTarget": "0",
+    "damageTarget": "0",
+    "healTarget": "0"
+  },
+  "inspiration": {
+    "type": "off",
+    "effect": "make an ally more powerful",
+    "rollTarget": "+10",
+    "damageTarget": "0",
+    "healTarget": "0"
+  },
+  "mockery": {
+    "type": "off",
+    "effect": "screw with an enemy",
+    "rollTarget": "+5",
+    "damageTarget": "+10",
+    "healTarget": "0"
+  },
+  "heal": {
+    "type": "sup",
+    "effect": "heal an ally",
+    "rollTarget": "0",
+    "damageTarget": "0",
+    "healTarget": "Xd10"
+  },
+  "shield": {
+    "type": "def",
+    "effect": "protect an ally",
+    "rollTarget": "+10",
+    "damageTarget": "0",
+    "healTarget": "0"
+  }
+}

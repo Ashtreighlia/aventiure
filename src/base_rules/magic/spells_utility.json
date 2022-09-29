@@ -1,0 +1,30 @@
+{
+  "detect_magic": {
+    "effect": "object begins to glow in a specific magical aura",
+    "aoe": "2"
+  },
+  "detect_traps": {
+    "effect": "traps are highlighted in the area",
+    "aoe": "4"
+  },
+  "flame": {
+    "effect": "small object begins to glow and burn if flammable",
+    "aoe": "0"
+  },
+  "light": {
+    "effect": "objects becomes a light source",
+    "aoe": "2"
+  },
+  "translate": {
+    "effect": "understanding a unknown language",
+    "aoe": "0"
+  },
+  "merge": {
+    "effect": "make smaller repairs to object and fuse them together",
+    "aoe": "0"
+  },
+  "telekenisis": {
+    "effect": "levitates and moves a small object",
+    "aoe": "0"
+  }
+}
