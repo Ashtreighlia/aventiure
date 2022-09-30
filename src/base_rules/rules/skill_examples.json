@@ -38,7 +38,7 @@
     "skillCheckLevel": "level 1",
     "gmRoll": "50",
     "result": "fail",
-    "notes": "player learns new skill lock picking: 2 (rolled a double)"
+    "notes": "player learns new skill lock picking: 2 (rolled a repdigit)"
   },
   {
     "skill": "do a thing: 1",
@@ -68,6 +68,6 @@
     "skillCheckLevel": "level 2",
     "gmRoll": "62, 43",
     "result": "success",
-    "notes": "player learns skill lock picking: 3 (all doubles)"
+    "notes": "player learns skill lock picking: 3 (all repdigits)"
   }
 ]

@@ -10,7 +10,7 @@
     "playerRoll": "22",
     "gmRoll": "50",
     "result": "fail",
-    "notes": "player learns new skill light: 2 (rolled a double)"
+    "notes": "player learns new skill light: 2 (rolled a repdigit)"
   },
   {
     "skill": "light: 2",

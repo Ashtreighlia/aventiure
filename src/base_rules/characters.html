@@ -12,13 +12,22 @@
   </head>
   <body onload="document.body.style.opacity='1'">
     <nav>
-      <p><a href="./rules.html">< back</a></p>
+      <p><a href="../"> < home </a></p>
+      <p><a href="./rules.html">rules</a></p>
+      <p><a href="./armoury.html">armoury</a></p>
+      <p><a href="./magic.html">magic</a></p>
+      <p><a href="./characters.html">characters</a></p>
+      <p><a href="./monsters.html">monsters</a></p>
+      <div>
+        <p><a href="#races">races</a></p>
+        <p><a href="#classes">classes</a></p>
+      </div>
     </nav>
 
     <img src="./characters/characters_banner.webp" alt="rules_cover" />
     <h1>the characters of âventiure</h1>
 
-    <h2>races</h2>
+    <h2 id="races">races</h2>
     <div
       class="table"
       x-data="{character: {}, traits: {}, combat: {}, magic: {}}"
@@ -73,7 +82,7 @@
       </table>
     </div>
 
-    <h2>classes</h2>
+    <h2 id="classes">classes</h2>
     <div
       class="table"
       x-data="{character: {}, traits: {}, combat: {}, magic: {}}"

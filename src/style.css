@@ -200,6 +200,7 @@ td {
   border: 3px solid var(--background-color_3);
   border-top: none;
   border-bottom: none;
+  font-weight: normal;
   padding: 5px;
 }
 

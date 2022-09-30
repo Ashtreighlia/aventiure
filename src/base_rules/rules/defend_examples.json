@@ -17,7 +17,7 @@
     "playerRoll": "33",
     "result": "fail",
     "damage": "1d10 - 6",
-    "notes": "monster hits for 6 damage, player learns a new skill medium armour: 2 (rolled a double)"
+    "notes": "monster hits for 6 damage, player learns a new skill medium armour: 2 (rolled a repdigit)"
   },
   {
     "monsterLevel": "2",

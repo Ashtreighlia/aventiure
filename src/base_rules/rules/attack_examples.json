@@ -27,7 +27,7 @@
     "result": "success",
     "weapon": "normal sword - 2d10 damage",
     "damage": "12",
-    "notes": "player learns new skill sword attack:2 (rolled a double)"
+    "notes": "player learns new skill sword attack:2 (rolled a repdigit)"
   },
   {
     "skill": "sword attack: 2",
