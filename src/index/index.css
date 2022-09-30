@@ -2,7 +2,10 @@ body {
   width: 100%;
 }
 
-h1,
+h1 {
+  padding-top: 75px;
+}
+
 h2,
 h3,
 h4,

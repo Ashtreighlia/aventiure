@@ -53,19 +53,18 @@ img {
 
 /* style of headings and text */
 h1 {
-  border: 5px none var(--main-color);
-  border-top-style: dashed;
   font-size: 4em;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
 h2 {
   border: 4px none var(--main-color_2);
-  border-top-style: dashed;
+  border-bottom-style: dashed;
   font-size: 3.5em;
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 h3 {
