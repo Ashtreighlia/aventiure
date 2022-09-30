@@ -177,7 +177,7 @@ table {
 
 th {
   background-color: var(--background-color_3);
-  border: 3px solid var(--main-color);
+  border: 3px solid var(--background-color_3);
   font-weight: bold;
   padding: 10px;
 }
@@ -193,10 +193,15 @@ th div div{
 
 td {
   background-color: var(--background-color);
-  border: 3px dashed var(--main-color_4);
+  border: 3px solid var(--background-color_2);
+  border-top: none;
+  border-bottom: none;
   padding: 5px;
 }
 
 tbody tr:nth-child(even) td{
   background-color: var(--background-color_2);
+  border: 3px solid var(--background-color_3);
+  border-top: none;
+  border-bottom: none;
 }
