@@ -8,17 +8,13 @@
     "squishy": "-50"
   },
   "vision": {
-    "normal_vision": "bad vision in dark lighting conditions",
+    "day_vision": "bad vision in dark lighting conditions",
     "dawn_vision": "better vision in dark lighting conditions",
-    "superior_vision": "excelent vision in dark lighting conditions"
+    "night_vision": "excellent vision in dark lighting conditions"
   },
-  "luck_on_rolls": {
+  "prowess": {
     "lucky": "+5",
     "jack_of_all_trades": "+2",
-    "normal": "0"
-  },
-  "special_skill": {
-    "curing": "+10 on heal spell rolls",
-    "first_aid": "treating wounds does Xd10 healing"
+    "ordinary": "0"
   }
 }

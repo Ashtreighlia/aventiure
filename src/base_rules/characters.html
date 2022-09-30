@@ -17,5 +17,115 @@
 
     <img src="./characters/characters_banner.webp" alt="rules_cover" />
     <h1>the characters of âventiure</h1>
+
+    <h2>races</h2>
+    <div
+      class="table"
+      x-data="{character: {}, traits: {}, combat: {}, magic: {}}"
+      x-init="fetch('./characters/character.json')
+         .then(response => response.json())
+         .then(data => character = data);
+         
+         fetch('./characters/character_traits.json')
+         .then(response => response.json())
+         .then(data => traits = data);
+         
+         fetch('./characters/character_combat.json')
+         .then(response => response.json())
+         .then(data => combat = data);
+         
+         fetch('./characters/character_magic.json')
+         .then(response => response.json())
+         .then(data => magic = data);"
+    >
+      <table>
+        <tr>
+          <th>race</th>
+          <th><div>trait<div>health</div></div></th>
+          <th><div>trait<div>vision</div></div></th>
+          <th><div>trait<div>prowess</div></div></th>
+
+          <th><div>combat<div>defense</div></div></th>
+          <th><div>combat<div>actions</div></div></th>
+          <th><div>combat<div>movement</div></div></th>
+
+          <th><div>magic<div>mana</div></div></th>
+          <th><div>magic<div>spells</div></div></th>
+          <th><div>magic<div>rituals</div></div></th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(character.race)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.traits.health + ':&#9;' + traits.health[x.traits.health]"></td>
+            <td x-text="x.traits.vision.replaceAll('_', ' ')"></td>
+            <td x-text="x.traits.prowess + ':&#9;' + traits.prowess[x.traits.prowess]"></td>
+
+            <td x-text="x.combat.defense + ':&#9;' + combat.defense[x.combat.defense]"></td>
+            <td x-text="x.combat.actions + ':&#9;' + combat.actions[x.combat.actions]"></td>
+            <td x-text="x.combat.movement + ':&#9;' + combat.movement[x.combat.movement]"></td>
+
+            <td x-text="x.magic.mana + ':&#9;' + magic.mana[x.magic.mana]"></td>
+            <td x-text="x.magic.spells + ':&#9;' + magic.spells[x.magic.spells]"></td>
+            <td x-text="x.magic.rituals + ':&#9;' + magic.rituals[x.magic.rituals]"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
+
+    <h2>classes</h2>
+    <div
+      class="table"
+      x-data="{character: {}, traits: {}, combat: {}, magic: {}}"
+      x-init="fetch('./characters/character.json')
+         .then(response => response.json())
+         .then(data => character = data);
+         
+         fetch('./characters/character_traits.json')
+         .then(response => response.json())
+         .then(data => traits = data);
+         
+         fetch('./characters/character_combat.json')
+         .then(response => response.json())
+         .then(data => combat = data);
+         
+         fetch('./characters/character_magic.json')
+         .then(response => response.json())
+         .then(data => magic = data);"
+    >
+      <table>
+        <tr>
+          <th>class</th>
+          <th><div>trait<div>health</div></div></th>
+          <th><div>trait<div>prowess</div></div></th>
+
+          <th><div>combat<div>actions</div></div></th>
+          <th><div>combat<div>movement</div></div></th>
+          <th><div>combat<div>special</div></div></th>
+
+          <th><div>magic<div>knowledge</div></div></th>
+          <th><div>magic<div>mana</div></div></th>
+          <th><div>magic<div>spells</div></div></th>
+          <th><div>magic<div>rituals</div></div></th>
+        </tr>
+
+        <template x-for="[key, x] of Object.entries(character.class)">
+          <tr>
+            <td x-text="key.replaceAll('_', ' ')"></td>
+            <td x-text="x.traits.health + ':&#9;' + traits.health[x.traits.health]"></td>
+            <td x-text="x.traits.prowess.replaceAll('_', ' ') + ':&#9;' + traits.prowess[x.traits.prowess]"></td>
+
+            <td x-text="x.combat.actions + ':&#9;' + combat.actions[x.combat.actions]"></td>
+            <td x-text="x.combat.movement + ':&#9;' + combat.movement[x.combat.movement]"></td>
+            <td x-text="x.combat.special + ':&#9;' + combat.special[x.combat.special]"></td>
+
+            <td x-text="x.magic.knowledge + ':&#9;' + magic.knowledge[x.magic.knowledge]"></td>
+            <td x-text="x.magic.mana + ':&#9;' + magic.mana[x.magic.mana]"></td>
+            <td x-text="x.magic.spells + ':&#9;' + magic.spells[x.magic.spells]"></td>
+            <td x-text="x.magic.rituals + ':&#9;' + magic.rituals[x.magic.rituals]"></td>
+          </tr>
+        </template>
+      </table>
+    </div>
   </body>
 </html>

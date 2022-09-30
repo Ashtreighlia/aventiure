@@ -1,0 +1,193 @@
+{
+  "race": {
+    "dwarf": {
+      "traits": {
+        "health": "sturdy",
+        "vision": "dawn_vision",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "defense": "hardy",
+        "actions": "presistent",
+        "movement": "sluggish"
+      },
+      "magic": {
+        "mana": "capable",
+        "spells": "ignorant",
+        "rituals": "mundane"
+      }
+    },
+    "elf": {
+      "traits": {
+        "health": "slender",
+        "vision": "dawn_vision",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "defense": "adept",
+        "actions": "presistent",
+        "movement": "agile"
+      },
+      "magic": {
+        "mana": "paranormal",
+        "spells": "versed",
+        "rituals": "mundane"
+      }
+    },
+    "gnome": {
+      "traits": {
+        "health": "slender",
+        "vision": "night_vision",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "defense": "tender",
+        "actions": "presistent",
+        "movement": "fit"
+      },
+      "magic": {
+        "mana": "paranormal",
+        "spells": "intuitive",
+        "rituals": "ritualistic"
+      }
+    },
+    "halfling": {
+      "traits": {
+        "health": "squishy",
+        "vision": "day_vision",
+        "prowess": "lucky"
+      },
+      "combat": {
+        "defense": "tender",
+        "actions": "presistent",
+        "movement": "fit"
+      },
+      "magic": {
+        "mana": "magical",
+        "spells": "intuitive",
+        "rituals": "mundane"
+      }
+    },
+    "human": {
+      "traits": {
+        "health": "average",
+        "vision": "day_vision",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "defense": "adept",
+        "actions": "presistent",
+        "movement": "fit"
+      },
+      "magic": {
+        "mana": "capable",
+        "spells": "versed",
+        "rituals": "ritualistic"
+      }
+    },
+    "orc": {
+      "traits": {
+        "health": "tough",
+        "vision": "day_vision",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "defense": "adept",
+        "actions": "prodigy",
+        "movement": "fit"
+      },
+      "magic": {
+        "mana": "capable",
+        "spells": "ignorant",
+        "rituals": "mystical"
+      }
+    }
+  },
+  "class": {
+    "arcanist": {
+      "traits": {
+        "health": "slender",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "actions": "clumsy",
+        "movement": "fit",
+        "special": "boring"
+      },
+      "magic": {
+        "knowledge": "master",
+        "spells": "intuitive",
+        "mana": "magical",
+        "rituals": "mundane"
+      }
+    },
+    "minstrel": {
+      "traits": {
+        "health": "average",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "actions": "presistent",
+        "movement": "fit",
+        "special": "curing"
+      },
+      "magic": {
+        "knowledge": "scholar",
+        "spells": "versed",
+        "mana": "paranormal",
+        "rituals": "mundane"
+      }
+    },
+    "scoundrel": {
+      "traits": {
+        "health": "fragile",
+        "prowess": "jack_of_all_trades"
+      },
+      "combat": {
+        "actions": "presistent",
+        "movement": "agile",
+        "special": "quick"
+      },
+      "magic": {
+        "knowledge": "trainee",
+        "spells": "ignorant",
+        "mana": "capable",
+        "rituals": "mundane"
+      }
+    },
+    "sentinel": {
+      "traits": {
+        "health": "tough",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "actions": "presistent",
+        "movement": "fit",
+        "special": "prepared"
+      },
+      "magic": {
+        "knowledge": "scholar",
+        "spells": "versed",
+        "mana": "capable",
+        "rituals": "mundane"
+      }
+    },
+    "warseeker": {
+      "traits": {
+        "health": "fragile",
+        "prowess": "ordinary"
+      },
+      "combat": {
+        "actions": "prodigy",
+        "movement": "fit",
+        "special": "boring"
+      },
+      "magic": {
+        "knowledge": "trainee",
+        "spells": "ignorant",
+        "mana": "dull",
+        "rituals": "mystical"
+      }
+    }
+  }
+}

@@ -1,18 +1,23 @@
 {
   "mana": {
-    "magical": "4",
-    "paranormal": "3",
-    "knowing": "2",
-    "dull": "1"
+    "magical": "+2",
+    "paranormal": "+1",
+    "capable": "0",
+    "dull": "-1"
   },
   "spells": {
-    "intuitive": "3",
-    "knowing": "2",
-    "ignorant": "1"
+    "intuitive": "+2",
+    "versed": "0",
+    "ignorant": "-1"
   },
   "rituals": {
-    "mystical": "3",
-    "ritualistic": "2",
-    "mundane": "1"
+    "mystical": "+2",
+    "ritualistic": "+1",
+    "mundane": "0"
+  },
+  "knowledge": {
+    "master": "all spells",
+    "scholar": "non-attack spells",
+    "trainee": "only utility spells"
   }
 }

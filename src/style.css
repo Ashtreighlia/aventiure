@@ -27,7 +27,14 @@
   --main-color_5: hwb(16 10% 40%);
   --main-color_6: hwb(16 10% 50%);
 
+  --heading_color: #fff;
+  --text_color: #ddd;
+
   --link-color: hwb(16 20% 0%);
+
+  --group-color_1: hwb(0 0% 75%);
+  --group-color_2: hwb(128 0% 75%);
+  --group-color_3: hwb(255 0% 75%);
 
   --background-color: hwb(-16 5% 90%);
   --background-color_2: hwb(-16 10% 80%);
@@ -87,7 +94,7 @@ h6{
 }
 
 p {
-  color: #ddd;
+  color: var(--text_color);
   font-family: "Fira Code";
   font-size: 1em;
   letter-spacing: -0.5px;
@@ -101,7 +108,7 @@ h4,
 h5,
 h6 {
   border-top-style: dashed;
-  color: #fff;
+  color: var(--heading_color);
   font-family: "Water Brush";
   line-height: 0em;
 }
@@ -180,6 +187,15 @@ th {
   border: 3px solid var(--main-color);
   font-weight: bold;
   padding: 10px;
+}
+
+th div{
+  color: var(--main-color);
+}
+
+th div div{
+  color: var(--text_color);
+  font-weight: normal;
 }
 
 td {
