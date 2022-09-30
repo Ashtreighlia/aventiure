@@ -32,10 +32,6 @@
 
   --link-color: hwb(16 20% 0%);
 
-  --group-color_1: hwb(0 0% 75%);
-  --group-color_2: hwb(128 0% 75%);
-  --group-color_3: hwb(255 0% 75%);
-
   --background-color: hwb(-16 5% 90%);
   --background-color_2: hwb(-16 10% 80%);
   --background-color_3: hwb(-16 15% 70%);
@@ -55,8 +51,10 @@ img {
   width: 100%;
 }
 
+/* style of headings and text */
 h1 {
   border: 5px none var(--main-color);
+  border-top-style: dashed;
   font-size: 4em;
   text-align: center;
   padding-top: 60px;
@@ -65,32 +63,28 @@ h1 {
 
 h2 {
   border: 4px none var(--main-color_2);
+  border-top-style: dashed;
   font-size: 3.5em;
   padding-top: 50px;
 }
 
 h3 {
-  border: 3px none var(--main-color_3);
   font-size: 2.5em;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 h4 {
-  border: 3px none var(--main-color_4);
   font-size: 2em;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 h5{
-  border: 2px none var(--main-color_5);
   font-size: 1.5em;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 h6{
-  border: 2px none var(--main-color_6);
   font-size: 1.25em;
-  padding-top: 10px;
 }
 
 p {
@@ -107,7 +101,6 @@ h3,
 h4,
 h5,
 h6 {
-  border-top-style: dashed;
   color: var(--heading_color);
   font-family: "Water Brush";
   line-height: 0em;
@@ -136,7 +129,7 @@ button:hover {
   transition-duration: 125ms;
 }
 
-/* create a navbar */
+/* style of navbar */
 nav{
   float: left;
   left: 0;
@@ -173,6 +166,7 @@ nav a:hover{
   transition-duration: 125ms;
 }
 
+/* style of tables */
 table {
   border-collapse: collapse;
   color: #fff;

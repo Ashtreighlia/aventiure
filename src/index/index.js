@@ -21,15 +21,16 @@ window.addEventListener(
 );
 
 async function scrollDown(){
-  for(let i = window.pageYOffset; i < windowHeight; i+=40){
+  for(let i = window.pageYOffset; i <= windowHeight; i+=40){
     if(i>windowHeight){
       i = windowHeight;
     }
     await new Promise(r => setTimeout(r, 1));
     window.scrollTo(0, i);
   }
+  /* very dirty fix for not scrolling to the bottom of the page */
+  window.scrollTo(0, windowHeight);
 }
-
 
 var tooSmall = false;
 function checkWindowSize() {
