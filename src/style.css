@@ -163,7 +163,7 @@ nav div a{
 
 nav a:hover{
   box-sizing: border-box;
-  border: 2px none var(--main-color);
+  border: 4px none var(--main-color);
   border-right-style: solid;
   background-color: var(--background-color_3);
   transition-duration: 125ms;

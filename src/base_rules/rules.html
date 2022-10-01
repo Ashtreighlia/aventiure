@@ -3,30 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../nav.css" />
+    <script src="../nav.js"></script>
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-
     <title>rules of âventiure</title>
   </head>
   <body onload="document.body.style.opacity='1'">
-    <nav>
-      <p><a href="../"> < home </a></p>
-      <p><a href="./rules.html">rules</a></p>
-      <p><a href="./armoury.html">armoury</a></p>
-      <p><a href="./magic.html">magic</a></p>
-      <p><a href="./characters.html">characters</a></p>
-      <p><a href="./monsters.html">monsters</a></p>
-      <div>
-        <p><a href="#skills">skills</a></p>
-        <p><a href="#combat">combat</a></p>
-        <p><a href="#magic">magic</a></p>
-        <p><a href="#character">character</a></p>
-        <p><a href="#monster">monster</a></p>
-      </div>
-    </nav>
+    <img onclick="openNav()" class="menu_icon" src="../icons/menu_open.svg" />
+    <div id="mobile_nav">
+      <img
+        onclick="closeNav()"
+        class="menu_icon"
+        src="../icons/menu_close.svg"
+      />
+      <nav>
+        <p><a href="../">< home </a></p>
+        <p><a href="./rules.html">rules</a></p>
+        <p><a href="./armoury.html">armoury</a></p>
+        <p><a href="./magic.html">magic</a></p>
+        <p><a href="./characters.html">characters</a></p>
+        <p><a href="./monsters.html">monsters</a></p>
+      </nav>
+    </div>
+
+    <div id="fullscreen_nav">
+      <nav>
+        <p><a href="../">< home </a></p>
+        <p><a href="./rules.html">rules</a></p>
+        <p><a href="./armoury.html">armoury</a></p>
+        <p><a href="./magic.html">magic</a></p>
+        <p><a href="./characters.html">characters</a></p>
+        <p><a href="./monsters.html">monsters</a></p>
+        <div>
+          <p><a href="#skills">skills</a></p>
+          <p><a href="#combat">combat</a></p>
+          <p><a href="#magic">magic</a></p>
+          <p><a href="#character">character</a></p>
+          <p><a href="#monster">monster</a></p>
+        </div>
+      </nav>
+    </div>
 
     <img src="./rules/aventiure_banner.webp" alt="rules_cover" />
     <h1>the rules of âventiure</h1>
