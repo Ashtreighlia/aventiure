@@ -1,0 +1,19 @@
+{
+  "trait": {
+    "health": "100",
+    "vision": "-",
+    "prowess": "0"
+  },
+  "combat": {
+    "defense": "0",
+    "actions": "2",
+    "movement": "2",
+    "special": "-"
+  },
+  "magic": {
+    "mana": "2",
+    "spells": "2",
+    "knowledge": "-",
+    "rituals": "0"
+  }
+}

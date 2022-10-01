@@ -210,3 +210,26 @@ tbody tr:nth-child(even) td{
   border-top: none;
   border-bottom: none;
 }
+
+ul {
+  list-style-type: ">";
+  padding: 0;
+}
+
+li{
+  color: var(--text_color);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+  padding: 5px;
+}
+
+code{
+  background-color: var(--background-color_4);
+  color: var(--text_color);
+  font-family: "Fira Code";
+  font-size: 1em;
+  font-weight: normal;
+  padding: 5px 10px 5px 10px;
+}

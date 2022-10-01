@@ -116,7 +116,7 @@
       },
       "magic": {
         "knowledge": "master",
-        "spells": "intuitive",
+        "spells": "academic",
         "mana": "magical",
         "rituals": "mundane"
       }
@@ -133,7 +133,7 @@
       },
       "magic": {
         "knowledge": "scholar",
-        "spells": "versed",
+        "spells": "intuitive",
         "mana": "paranormal",
         "rituals": "mundane"
       }

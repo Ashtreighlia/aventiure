@@ -1,0 +1,17 @@
+.footer{
+  background-color: var(--background-color_2);
+  padding: 5px 0px 50px 0px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.footer div{
+  background-color: var(--background-color_4);
+  padding: 25px 0px 25px 0px;
+}
+
+.footer div:hover {
+  background-color: var(--background-color_3);
+  outline: 4px solid var(--link-color);
+  transition-duration: 125ms;
+}

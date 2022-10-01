@@ -6,6 +6,7 @@
     "dull": "-1"
   },
   "spells": {
+    "academic": "+4",
     "intuitive": "+2",
     "versed": "0",
     "ignorant": "-1"

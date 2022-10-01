@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../footer.css" />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -24,7 +25,75 @@
       </div>
     </nav>
 
-    <img src="./characters/characters_banner.webp" alt="rules_cover" />
-    <h1>the characters of âventiure</h1>
+    <img src="./monsters/monsters_banner.webp" alt="rules_cover" />
+    <h1>the monsters of âventiure</h1>
+    <p>
+      Since this version is still an early alpha, there is no monster compendium
+      - yet.
+    </p>
+    <p>
+      As a guide to creating monsters in âventiure, the following chapters
+      describe a rough framework within which you can design your encounters.
+    </p>
+
+    <h2>stats</h2>
+    <h3>level</h3>
+    <p>
+      The level of a monster determines all of its major stats, like health,
+      number of actions per turn and the attack/defense levels. Generally
+      meaning the higher the level of a monster, the more difficult it gets to
+      defeat it.
+    </p>
+
+    <h3>tier</h3>
+    <p>
+      A monster can fall into different tiers. You can think of it from minion
+      (tier 1) to boss (tier 5), but they are all from the same species.
+      However, the tier of a monster only affects its health and not any other
+      stats.
+    </p>
+
+    <h3>health</h3>
+    <p>
+      The health of a monster is being calculated by its base health, level and
+      tier.
+    </p>
+    <code>base_health = 50</code>
+    <code>level = X * d10-roll</code>
+    <code>tier = Y * 25</code>
+    <code>health = base_health + level + tier</code>
+
+    <h2>combat</h2>
+    <h3>actions</h3>
+    <p>
+      The number of acitons per turn for a monster are determined by its level.
+      For example, a level 5 monster would have 5 actions per turn.
+    </p>
+
+    <h3>movement</h3>
+    <p>
+      Every monster has two movement actions, but they are also allowed to use
+      their normal actions as a movement action.
+    </p>
+
+    <h3>attack and defence</h3>
+    <p>
+      A monster's attack and defence level is the same as the level of the
+      monster. But the same action-decay rules apply here, meaning, that the
+      attack level decrases with every actionin the same turn.
+    </p>
+
+    <h3>damage</h3>
+    <p>
+      The damage a monster can deal is the sum of rolled Xd10, where X is the
+      level of the monster.
+    </p>
+
+    <div class="footer">
+      <h4>imprint</h4>
+      <div class="links">
+        <a href="">coming soon</a>
+      </div>
+    </div>
   </body>
 </html>
