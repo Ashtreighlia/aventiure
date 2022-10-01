@@ -73,6 +73,20 @@ h6 {
   max-width: 960px;
 }
 
+.intro{
+  background-color: var(--background-color_2);
+  display: flex;
+  flex-grow: 1;
+  gap: 25px;
+}
+
+.intro p {
+  background-color: var(--background-color_3);
+  padding: 25px 50px 25px 50px;
+  text-align: center;
+  width: auto;
+}
+
 .nav {
   background-color: var(--background-color_2);
   margin-top: 25px;
@@ -87,7 +101,7 @@ h6 {
   width: 100%;
 }
 
-.links a {
+.links a,.version {
   background-color: var(--background-color_4);
   flex-grow: 1;
   flex-shrink: 0;

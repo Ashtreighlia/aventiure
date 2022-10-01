@@ -27,8 +27,9 @@
   --main-color_5: hwb(16 10% 40%);
   --main-color_6: hwb(16 10% 50%);
 
-  --heading_color: #fff;
-  --text_color: #ddd;
+  --heading-color: #fff;
+  --text-color: #ddd;
+  --text-color_2: #aaa;
 
   --link-color: hwb(16 20% 0%);
 
@@ -90,7 +91,7 @@ h6{
 }
 
 p {
-  color: var(--text_color);
+  color: var(--text-color);
   font-family: "Fira Code";
   font-size: 1em;
   letter-spacing: -0.5px;
@@ -103,7 +104,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading_color);
+  color: var(--heading-color);
   font-family: "Water Brush";
   line-height: 0em;
 }
@@ -172,7 +173,7 @@ nav a:hover{
 table {
   border: 3px solid var(--background-color_3);
   border-collapse: collapse;
-  color: var(--text_color);
+  color: var(--text-color);
   font-family: "Open Sans", sans-serif;
   overflow-x: auto;
   text-align: center;
@@ -181,7 +182,7 @@ table {
 
 th {
   background-color: var(--background-color_3);
-  color: var(--heading_color);
+  color: var(--heading-color);
   font-weight: bold;
   padding: 10px;
 }
@@ -191,7 +192,7 @@ th div{
 }
 
 th div div{
-  color: var(--text_color);
+  color: var(--text-color);
   font-weight: normal;
 }
 
@@ -217,7 +218,7 @@ ul {
 }
 
 li{
-  color: var(--text_color);
+  color: var(--text-color);
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   font-weight: normal;
@@ -227,7 +228,7 @@ li{
 
 code{
   background-color: var(--background-color_4);
-  color: var(--text_color);
+  color: var(--text-color);
   font-family: "Fira Code";
   font-size: 1em;
   font-weight: normal;
