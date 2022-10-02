@@ -180,7 +180,7 @@
       "combat": {
         "actions": "prodigy",
         "movement": "fit",
-        "special": "boring"
+        "special": "proximal"
       },
       "magic": {
         "knowledge": "trainee",

@@ -18,6 +18,7 @@
     "curing": "+5 on heal spell rolls",
     "prepared": "use 1 action to gain +5 on next defense rolls",
     "quick": "attack twice with 1d10 dmg weapons",
+    "proximal": "can only use melee weapons",
     "boring": "-"
   }
 }
