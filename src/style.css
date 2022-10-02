@@ -41,6 +41,7 @@
 
 body {
   background-color: var(--background-color);
+  image-rendering: pixelated;
   margin: auto;
   width: 960px;
   overflow-x: hidden;

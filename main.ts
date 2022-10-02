@@ -46,7 +46,7 @@ async function handleRequest(request: Request): Promise<Response> {
           "content-type": "application/json",
         },
       });
-    } else if (filetype == "webp") {
+    } else if (filetype == "gif") {
       const file = await Deno.readFile("./src/" + path);
       return new Response(file, {
         headers: {

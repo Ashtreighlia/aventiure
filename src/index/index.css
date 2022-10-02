@@ -32,13 +32,13 @@ h6 {
 }
 
 .art {
-  background-image: url(../index/aventiure_background.webp);
+  background-image: url(../index/aventiure_background.gif);
   background-position: center;
   background-size: cover;
 }
 
 .lettering {
-  background-image: url(../index/aventiure_lettering.png);
+  background-image: url(../index/aventiure_lettering.gif);
   background-position: center 25%;
   background-size: 70vmin;
 }
