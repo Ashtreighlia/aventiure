@@ -1,4 +1,4 @@
-# ![banner for aventiure](./aventiure_banner.gif)
+# <img src="./aventiure_banner.gif" style="width: 100%; image-rendering: pixelated;">
 
 [![Discord](https://img.shields.io/discord/1018120092644540417?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.gg/ZpjwMkNmJH)
 
