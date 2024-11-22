@@ -6,7 +6,7 @@
 
 Âventiure is a one-shot TTRPG ruleset for those who want to get a session going with very little time on their hands because somehow the stars aligned at the last minute and everyone would be up for a game tomorrow. But if you want to use this ruleset for a full-fledged campaign, no one will be able stop you, you lunatic.
 
-If this has sparked your interest, then check it out at [aventiure.xyz](https://aventiure.xyz).
+If this has sparked your interest, then check it out at [aventiure]([https://aventiure.xyz](https://noisy-duck-22-5kd9n1p99myg.deno.dev/)).
 
 ## contributing
 
